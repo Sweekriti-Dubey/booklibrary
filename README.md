@@ -1,12 +1,61 @@
-# React + Vite
+# 📚 Book Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application built with **React**, **Tailwind CSS**, and **FakeREST API** to manage a list of books.  
+This webapp allows users to **view books from an API** and **add, edit, or delete locally stored books**, using **LocalStorage** for persistence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ View books fetched from the FakeREST API
+- ➕ Add new books (saved in LocalStorage)
+- ✏️ Edit existing **local books only**
+- ❌ Delete **only local books**
+- 💾 Persistent data with LocalStorage
+- 🎨 Responsive UI styled with Tailwind CSS
+- ⚛️ React Router for smooth navigation
+- 🔁 Axios used for API requests
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> ⚠️ *Note: API-fetched books are **read-only**. Only locally added books can be edited or deleted.*
+
+---
+
+## 🔧 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/) – for making HTTP requests
+- [FakeREST API](https://fakerestapi.azurewebsites.net/)
+- [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [React Router DOM](https://reactrouter.com/en/main)
+
+---
+
+## 📁 Folder Structure
+
+```bash
+src/
+├── api/
+│   └── axios.api.js         # Axios setup and API logic
+├── components/
+│   └── Navbar.jsx
+├── pages/
+│   ├── Add.jsx
+│   ├── Delete.jsx
+│   ├── Details.jsx
+│   ├── Edit.jsx
+│   ├── Home.jsx
+│   └── List.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+---
+
+---
+
+## ▶️ How to Run
+
+Clone the repo, run `npm install` to install dependencies, then `npm run dev` to start the development server at `http://localhost:5173`.
+
+
